@@ -5,27 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kit Digital - PCComponentes</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f8f8f8; margin: 0; padding: 20px; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #ff6600; }
-        p { color: #333; }
-        .cta { display: inline-block; margin-top: 20px; padding: 10px 20px; color: white; background-color: #ff6600; text-decoration: none; border-radius: 5px; }
-        form { margin-top: 20px; }
-        input, button { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 5px; }
-        button { background-color: #ff6600; color: white; cursor: pointer; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #ff6600;
+        }
+
+        p, ul {
+            color: #333;
+            text-align: left;
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "✔";
+            color: #ff6600;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #cc5500;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Consigue tu PC con el Kit Digital</h1>
         <p>Gracias a PCComponentes y ORBIDI, puedes obtener tu PC financiado con el Kit Digital.</p>
-        <p>Rellena el formulario y descubre cómo acceder a esta oportunidad.</p>
-        <form>
+
+        <div class="info">
+            <h2>¿Qué es el Kit Digital?</h2>
+            <p>El <strong>Kit Digital</strong> es una iniciativa del Gobierno de España que ofrece ayudas económicas a empresas y autónomos para digitalizar su negocio.</p>
+
+            <h2>¿Cómo te ayuda ORBIDI?</h2>
+            <p>Con <strong>ORBIDI</strong> y <strong>PCComponentes</strong>, puedes solicitar tu PC financiado con el Kit Digital de forma rápida y sencilla.</p>
+
+            <ul>
+                <li>Accede a subvenciones de hasta <strong>12.000€</strong>.</li>
+                <li>Elige entre una selección de <strong>PCs de última generación</strong>.</li>
+                <li>Asesoría gratuita para gestionar tu solicitud.</li>
+            </ul>
+
+            <p>¡No pierdas esta oportunidad! Rellena el formulario y nos pondremos en contacto contigo.</p>
+        </div>
+
+        <form action="thank-you.html" method="GET">
             <input type="text" placeholder="Nombre completo" required>
             <input type="email" placeholder="Correo electrónico" required>
             <input type="tel" placeholder="Teléfono" required>
             <button type="submit">Solicitar información</button>
         </form>
+
         <a href="#" class="cta">Más información</a>
     </div>
 </body>
