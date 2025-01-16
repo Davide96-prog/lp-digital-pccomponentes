@@ -53,9 +53,9 @@
         button {
             background-color: #ff6600;
             color: white;
-            font-size: 16px; /* Ridotto da 18px */
+            font-size: 16px;
             font-weight: bold;
-            padding: 10px; /* Ridotto da 12px */
+            padding: 10px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -75,12 +75,19 @@
             text-decoration: none;
             border-radius: 5px;
         }
+
+        /* Aggiunto margine per separare l'immagine dal titolo */
+        .image-container {
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Immagine del PC sopra il titolo -->
-        <img src="https://source.unsplash.com/800x400/?laptop,technology" alt="PC moderno" width="100%">
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x400.png?text=PC+Modern" alt="PC moderno" width="100%">
+        </div>
 
         <h1>Consigue tu PC con el Kit Digital</h1>
         <p>Gracias a PCComponentes y ORBIDI, puedes obtener tu PC financiado con el Kit Digital.</p>
